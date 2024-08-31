@@ -16,6 +16,7 @@ The following patches are available:
 * [Xresources](https://st.suckless.org/patches/xresources/)
 * [Ligatures](https://st.suckless.org/patches/ligatures/)
 * [SelectionColors](https://st.suckless.org/patches/selectioncolors/) (can be disabled in config)
+* [Wide glyph support](https://st.suckless.org/patches/glyph_wide_support/)
 
 In order for ligatures to show in the terminal, you will need a font that supports those. A good example is [Monoid](https://github.com/larsenwork/monoid)
 
@@ -63,4 +64,3 @@ These are global settings, it is also possible to configure them for just st by 
 ## Can I futher customize st?
 Absolutely! Take a look at the `config.def.h` file and make the adjustments you would like, specially on the bindings. Changes need to be done AFTER applying the patches, otherwise will fail. If you already compiled st, then please edit `config.h` file instead. Remember you will need to compile and install again st.\
 Changes in the `.Xresource` file just require the good ol' `xrdb -merge ~/.Xresources` and re-open st
-
